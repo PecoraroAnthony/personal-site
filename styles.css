@@ -1,0 +1,135 @@
+/* Homepage stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#home {
+    background: url(./img/portrait.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello-big,
+.hello-small {
+    margin-left: auto;
+    padding-right: 200px;
+    color: white;
+}
+
+.hello-big {
+    font-size: 65px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.hello-small {
+    font-size: 24px;
+}
+
+
+/* Personal Information Section */
+.p-info-container {
+    display: flex;
+    justify-content: center;
+    padding: 100px 250px;
+    gap: 50px;
+}
+
+.p-info-left {
+    font-size: 18px;
+    width: 400px;
+}
+
+.img-container {
+    display: flex;
+    padding-top: 18px;
+    gap: 25px;
+}
+
+/* target the images */
+.img-container > a > img {
+    width: 35px;
+    height: auto;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    /* Remove default styles */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    border-bottom: 1px solid grey;
+    padding: 18px 0px;
+}
+
+.p-info-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1000px;
+    padding: 0;
+    color: grey;
+    line-height: 25px;
+    gap: 18px;
+}
+
+.download-button > a {
+    text-decoration: none;
+    color: black;
+    border: 0.5px solid grey;
+    padding: 10px 25px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+/* Education Section */
+.education {
+    background-color: aliceblue;
+    padding: 100px 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.ed-title {
+    font-size: 40px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 500;
+}
+
+/* target each subsection div */
+.education div:nth-child(n+2) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px;
+    border: 1px solid grey;
+
+}
+
+/* Remove default p margin and padding */
+.education > div > p {
+    padding: 0;
+    margin: 0;
+}
+
+.school-name {
+    font-size: 25px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+}
+
+
+
+
