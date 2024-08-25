@@ -60,7 +60,7 @@ body {
     height: auto;
 }
 
-ul {
+.ul-pinfo {
     display: flex;
     flex-direction: column;
     /* Remove default styles */
@@ -69,7 +69,7 @@ ul {
     padding: 0;
 }
 
-li {
+.ul-pinfo > li {
     border-bottom: 1px solid grey;
     padding: 18px 0px;
 }
@@ -102,14 +102,18 @@ li {
     gap: 18px;
 }
 
-.ed-title {
+.ed-title,
+.exp-title,
+.pjct-header,
+.extra-header {
     font-size: 40px;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 500;
 }
 
 /* target each subsection div */
-.education div:nth-child(n+2) {
+.education div:nth-child(n+2),
+.exp div:nth-child(n+2) {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -119,17 +123,109 @@ li {
 }
 
 /* Remove default p margin and padding */
-.education > div > p {
+p {
     padding: 0;
     margin: 0;
 }
 
-.school-name {
+.school-name,
+.job-title {
     font-size: 25px;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 400;
 }
 
+/* Experience Section */
+.exp {
+    padding: 100px 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.ul-exp {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0;
+    list-style: square;
+}
+
+/* Project Section */
+.projects {
+    background-color: aliceblue;
+    padding: 100px 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.pjct-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* controls outside boxes */
+.pjct-container {
+    display: flex;
+    flex-direction: row;
+    width: 32%;
+}
+
+/* content inside box */
+.pjct-thumb {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background-color: #2b2b2b;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.pjct-container > a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Extracurriculars Section */
+.extra {
+    padding: 100px 250px;;
+}
+
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2b2b2b;
+    color: white;
+    font-size: 18px;
+    padding: 50px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 18px;
+    padding-top: 10px;
+}
+
+/* Centers images and creates circular border */
+.footer-social > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.footer-social > a > img {
+    width: 15px;
+    height: auto;
+}
 
 
 
