@@ -21,7 +21,7 @@ body {
 .hello-big,
 .hello-small {
     margin-left: auto;
-    padding-right: calc(2vw + 2vh);
+    padding-right: calc(3.75vw + 3.75vh);
     color: white;
 }
 
@@ -32,6 +32,7 @@ body {
 
 .hello-small {
     font-size: calc(1vw + 1vh);
+    padding-bottom: 100px;
 }
 
 
