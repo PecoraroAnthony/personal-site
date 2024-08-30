@@ -16,6 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .hello-big,
@@ -237,6 +238,37 @@ p {
 /* Extracurriculars Section */
 .extra {
     padding: 100px 250px;;
+}
+
+/* flip image location every even child */
+.extra-blocks .extra-content:nth-child(even) {
+    flex-direction: row-reverse;
+} 
+
+.extra-content {
+    display: flex;
+    gap: 50px;
+    padding: 50px 0px;
+    border-bottom: 0.5px solid grey;
+}
+
+.extra-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.extra-p {
+    font-size: 18px;
+    color: grey;
+}
+
+/* img placeholder */
+.extra-content img {
+    height: 100px;
+    width: auto;
 }
 
 
